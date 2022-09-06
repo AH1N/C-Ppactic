@@ -8,6 +8,9 @@
 int num1 = Convert.ToInt32(Console.ReadLine());
 if(num1 > 5 && num1 < 8) Console.WriteLine("да");
 else Console.WriteLine("нет");
+
+
+
     
 
 
