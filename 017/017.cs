@@ -54,7 +54,7 @@ double y2  = Convert.ToDouble(Console.ReadLine());
 double d = Math.Sqrt(Math.Pow(x1-x2, 2) + Math.Pow(y2-y1, 2));
 
 System.Console.WriteLine(d);
-System.Console.WriteLine(Math.Round(d,2);
+System.Console.WriteLine(Math.Round(d,2));
 */
 Console.WriteLine("============================================");
 /*
