@@ -5,6 +5,8 @@
 
 6, 1, 33 -> [6, 1, 33]*/
 
+System.Console.WriteLine("ПЕРВЫЙ ВАРИАНТ");
+
 int number =Convert.ToInt32(Console.ReadLine());
 
 System.Console.WriteLine(String.Join(" ,", FillArray(number)));
@@ -18,20 +20,25 @@ int[] FillArray(int size){
     return arr;  
 }
 
+System.Console.WriteLine("=============================================");
+System.Console.WriteLine(" ");
+System.Console.WriteLine(" ");
 
-// int size =Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine("ВТОРОЙ ВАРИАНТ");
 
-// System.Console.WriteLine(String.Join(" ,", FillArray1(number)));
+int size =Convert.ToInt32(Console.ReadLine());
 
-// int[] FillArray1(int size){
+System.Console.WriteLine($"{String.Join(" ,", FillArray1(size))} ------ ВОТ ТАКОЙ МАССИВ ПОЛУЧИЛСЯ");
 
-//     int[] arr= new int[size];
-//     for (int i = 0; i < size; i++)
-//     {
-//         System.Console.WriteLine($"ВВЕДИТЕ {i} ЭЛЕМЕНТ");
-        
-//         arr[i] = new[] Convert.ToInt32(Console.ReadLine()); //Next(5) => все от 0 до 4
-//     }
-//     return arr;  
-// }
-// //Int32.TryParse
+int[] FillArray1(int size){
+
+    int[] arr= new int[size];
+    for (int i = 0; i < size; i++)
+    {
+        System.Console.WriteLine($"ВВЕДИТЕ {i} ЭЛЕМЕНТ");
+    
+        arr[i] = Convert.ToInt32(Console.ReadLine()); //ПОЧЕМУ ТУТ NEW НЕ НАДО ПИСАТЬ??
+    }
+    return arr;  
+}
+
